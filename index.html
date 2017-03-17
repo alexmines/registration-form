@@ -12,50 +12,49 @@
 <body>
 
   <section>
-    <div>
-      <h1>Want to go to Mars?</h1>
-    </div>
-    <div>
-      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-    </div>
-    <div>
+    <h1>Want to go to Mars?</h1>
+    <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+    <div class="unit">
       <h2>Personal details</h2>
       <form class="push-0" method="POST" action="https://formspree.io/mine0051@algonquinlive.com">
-        <div class="push">
-          <label for="name">Name</label>
-          <input id="name" name="name">
+        <div class="grid">
+          <div class="push unit">
+            <label for="name">Name</label>
+            <input id="name" name="name">
+          </div>
+          <div class="push unit">
+            <label for="name">Age</label>
+            <input id="name" name="name">
+          </div>
+          <div class="push unit">
+            <label for="email">Email</label>
+            <input id="email" type="email">
+          </div>
+          <div class="push unit">
+            <label for="subject">Physical fitness</label>
+            <select id="subject" name="_subject">
+              <option>Super-human</option>
+              <option>Fit as a fiddle</option>
+              <option>Not terribly strong</option>
+              <option>A little couch-potato-y</option>
+            </select>
+          </div>
+          <div class="push unit">
+            <label for="details">Address</label>
+            <textarea id="details" name="message"></textarea>
+          </div>
         </div>
-        <div class="push">
-          <label for="name">Age</label>
-          <input id="name" name="name">
-        </div>
-        <div class="push">
-          <label for="email">Email</label>
-          <input id="email" type="email">
-        </div>
-        <div class="push">
-          <label for="subject">Physical fitness</label>
-          <select id="subject" name="_subject">
-            <option>Super-human</option>
-            <option>Fit as a fiddle</option>
-            <option>Not terribly strong</option>
-            <option>A little couch-potato-y</option>
-          </select>
-        </div>
-        <div class="push">
-          <label for="details">Address</label>
-          <textarea id="details" name="message"></textarea>
-        </div>
-        <div>
+        <div class="unit unit">
           <h2> Mission statement</h2>
         </div>
-        <div class="push">
+        <div class="push unit">
           <label for="details">Why do you want to go to Mars?</label>
           <textarea id="details" name="message"></textarea>
         </div>
         <div>
           <button class="btn" type="submit">Register for the trip!</button>
         </div>
+        <input type="hidden" name="subject" value="Request to join the mission">
       </form>
     </div>
   </section>
