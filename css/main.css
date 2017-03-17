@@ -1,11 +1,7 @@
-input {
-  padding-right: 5em;
+html {
+  font-family: 'Open Sans', sans-serif;
 }
 
-textarea {
-  padding-right: 5em;
-}
-
-select {
+input, textarea, select {
   padding-right: 5em;
 }
